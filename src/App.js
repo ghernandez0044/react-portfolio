@@ -3,6 +3,7 @@ import useMediaQuery from './hooks/useMediaQuery'
 import Navigation from "./components/Navigation";
 import DotGroup from "./components/DotGroup";
 import LandingPage from "./components/LandingPage";
+import LineGradient from "./components/LineGradient";
 
 function App() {
   // Create state variables
@@ -28,6 +29,7 @@ function App() {
         )}
         <LandingPage setSelectedPage={setSelectedPage} />
       </div>
+      <LineGradient />
     </div>
   );
 }
