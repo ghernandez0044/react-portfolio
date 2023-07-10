@@ -17,17 +17,21 @@ function Navigation({ selectedPage, setSelectedPage }){
     return (
         <nav className={`border-2 border-lime-600 z-40 w-full fixed top-0 py-6`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-                <h4 className="font-subheading text-3xl font-bold">LOGO</h4>
+                <h4 className="font-subheading text-3xl font-bold">GH</h4>
 
             {/* DESKTOP NAVIGATION */}
             {isAboveSmallScreens ? (
                 <div className="flex justify-between gap-16 font-subheading text-sm font-semibold">
                     <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                    <Link page='Skills' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                    <Link page='Projects' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                    <Link page='Resume' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+                    <Link page='Contact' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 </div>
             ) : (
-                <div>
-
-                </div>
+                <button>
+                    <i className="fa-solid fa-bars" />
+                </button>
             )}
             </div>
         </nav>
