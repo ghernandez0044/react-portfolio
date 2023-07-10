@@ -29,7 +29,7 @@ function Navigation({ selectedPage, setSelectedPage }){
                     <Link page='Contact' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 </div>
             ) : (
-                <button>
+                <button className="rounded-full bg-pale-purple p-2 h-10 w-10" onClick={() => setIsMenuToggled(!isMenuToggled)}>
                     <i className="fa-solid fa-bars" />
                 </button>
             )}
