@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import DotGroup from "./components/DotGroup";
 import LandingPage from "./components/LandingPage";
 import LineGradient from "./components/LineGradient";
+import SkillSection from "./components/SkillSection";
 
 function App() {
   // Create state variables
@@ -31,7 +32,7 @@ function App() {
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-
+          <SkillSection />
       </div>
     </div>
   );
