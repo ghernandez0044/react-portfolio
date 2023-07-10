@@ -1,8 +1,9 @@
-function LineGradient(){
+function LineGradient({ width = 'w-full' }){
 
 
     return (
-        null
+        <div className={`h-0.5 ${width} bg-gradient-rainred`}>
+        </div>
     )
 }
 
