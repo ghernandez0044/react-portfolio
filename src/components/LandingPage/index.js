@@ -19,6 +19,7 @@ function LandingPage({ setSelectedPage }){
                 ) : (
                     <img className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-t-[400px]" alt='profile-picture' src='https://i.pinimg.com/564x/07/b5/60/07b560873c8d287c51f0eefc2604603d.jpg' />
                 )}
+                </div>
 
                 {/* MAIN SECTION */}
                 <div className="z-30 basis-2/5 mt-12 md:mt-32">
@@ -29,12 +30,11 @@ function LandingPage({ setSelectedPage }){
                             Guillermo <br></br>
                             <span className="xs:relative xs:text-pale-purple xs:font-semibold z-20 before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">Hernandez-Lopez</span> {/* add xs:before:content-brush */}
                         </p>
-                        <p>
+                        <p className="mt-10 mb-7 text-sm text-center md:text-start">
                             I am an enthusiastic and highly motivated Full Stack Software Engineer
                         </p>
                     </motion.div>
                 </div>
-            </div>
         </section>
     )
 }
