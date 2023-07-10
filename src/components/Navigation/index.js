@@ -16,7 +16,7 @@ function Navigation({ isTopOfPage, selectedPage, setSelectedPage }){
     const navbarBackground = isTopOfPage ? '' : 'bg-firengine-red'
 
     return (
-        <nav className={`border-2 border-lime-600 z-40 w-full fixed top-0 py-6 ${navbarBackground}`}>
+        <nav className={`z-40 w-full fixed top-0 py-6 ${navbarBackground}`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
                 <h4 className="font-subheading text-3xl font-bold">GH</h4>
 

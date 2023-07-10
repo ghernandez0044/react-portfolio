@@ -34,6 +34,23 @@ function LandingPage({ setSelectedPage }){
                             I am an enthusiastic and highly motivated Full Stack Software Engineer
                         </p>
                     </motion.div>
+
+                    {/* CALL TO ACTIONS */}
+                    <motion.div className="flex mt-5 justify-center md:justify-start" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 0.2 }} variants={{ hidden: { opacity: 0, x: -50 },
+                       visible: { opacity: 1, x: 0 } }}>
+                        <AnchorLink className="bg-gradient-rainbow text-white rounded-sm py-3 px-7 font-semibold hover:text-pale-purple transition duration-700 w-[160px] h-[50px] text-center uppercase" onClick={() => setSelectedPage('contact')} href="#contact">
+                            Contact Me
+                        </AnchorLink>
+                        <AnchorLink className="rounded-r-sm bg-gradient-rainbow py-0.5 pr-0.5 w-[160px] h-[50px] text-center uppercase" onClick={() => setSelectedPage('contact')} href="#contact">
+                            <div className="bg-space-blue hover:text-pale-purple transition duration-700 w-full h-full flex items-center justify-center font-subheading">
+                                Let's talk.
+                            </div>
+                        </AnchorLink>
+                    </motion.div>
+                    <motion.div className="flex mt-5 justify-center md:justify-start" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 0.4 }} variants={{ hidden: { opacity: 0, x: -50 },
+                       visible: { opacity: 1, x: 0 } }}>
+                        
+                    </motion.div>
                 </div>
         </section>
     )
