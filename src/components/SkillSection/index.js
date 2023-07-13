@@ -32,7 +32,7 @@ function SkillSection(){
 
             {/* SKILLS */}
                 {/* EXPERIENCE 1 */}
-                <motion.div className="md:w-1/3 mt-10 border-2 border-white flex flex-col justify-center items-center" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9 }} variants={{ hidden: { opacity: 0, y: 50 },
+                <motion.div className="md:w-1/3 mt-10 border-2 border-black flex flex-col justify-center items-center" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9 }} variants={{ hidden: { opacity: 0, y: 50 },
                        visible: { opacity: 1, y: 0 } }}>
                     <div className="md:flex md:flex-wrap md:w-screen md:justify-between mt-16 gap-32 border-2 border-red-600">
                         <div className="relative h-32 border-2 border-gray-700">
@@ -52,115 +52,25 @@ function SkillSection(){
                                 <p className="font-subheading font-semibold text-3xl mt-3">SQLAlchemy</p>
                                 <img className="w-[75px] h-[75px]" alt='react logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">React</p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
-                {/* EXPERIENCE 8 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">08</p> */}
                                 <img className="w-[75px] h-[75px]" alt='redux logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">Redux</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 9 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">09</p> */}
                                 <img className="w-[75px] h-[75px]" alt='html logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">HTML</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 10 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">10</p> */}
                                 <img className="w-[75px] h-[75px]" alt='css logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">CSS</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 11 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">11</p> */}
                                 <img className="w-[75px] h-[75px]" alt='css logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">TailwindCSS</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 12 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">12</p> */}
                                 <p className="font-subheading font-semibold text-3xl mt-3">FramerMotion</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 13 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">13</p> */}
                                 <p className="font-subheading font-semibold text-3xl mt-3">SQL</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 14 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">14</p> */}
                                 <img className="w-[75px] h-[75px]" alt='postgresql logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">PostgreSQL</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 15 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">15</p> */}
                                 <img className="w-[75px] h-[75px]" alt='sqlite logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">SQLite</p>
-                            </div>
-                            <div className="w-1/2 md:w-3/4 bg-pale-purple right-0 top-0 z-[-1]" />
-                        </div>
-                </motion.div>
-                {/* EXPERIENCE 16 */}
-                <motion.div className="md:w-1/3 mt-10" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9, delay: 1 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                        <div className="relative h-32">
-                            <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">16</p> */}
                                 <img className="w-[75px] h-[75px]" alt='git logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg' />
                                 <p className="font-subheading font-semibold text-3xl mt-3">Git</p>
                             </div>
-                            {/* <div className="w-1/2 md:w-3/4 h-32 bg-pale-purple absolute right-0 top-0 z-[-1]" /> */}
                         </div>
+                    </div>
                 </motion.div>
         </section>
     )
