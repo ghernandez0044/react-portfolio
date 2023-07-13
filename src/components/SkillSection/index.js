@@ -22,56 +22,101 @@ function SkillSection(){
                 <div className="mt-16 md:mt-0">
                     {isAboveLarge ? (
                         <div className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:w-full before:h-full before:border-2 before:border-tiffany-blue before:z-[-1]">
-                            <img className="z-10" alt='skills' src='https://avatars.githubusercontent.com/u/100185260?s=400&u=23abf72a8939f9a0908abd7e969d60d2c55b7f76&v=4' />
+                            <img className="z-10 h-[350px]" alt='skills' src='https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
                         </div>
                     ) : (
-                        <img className="z-10" alt='skills' src='https://avatars.githubusercontent.com/u/100185260?s=400&u=23abf72a8939f9a0908abd7e969d60d2c55b7f76&v=4' />   
+                        <img className="z-10 h-[350px]" alt='skills' src='https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />   
                     )}
                 </div>
             </div>
 
             {/* SKILLS */}
-                {/* EXPERIENCE 1 */}
-                <motion.div className="md:w-1/3 mt-10 border-2 border-black flex flex-col justify-center items-center" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9 }} variants={{ hidden: { opacity: 0, y: 50 },
-                       visible: { opacity: 1, y: 0 } }}>
-                    <div className="md:flex md:flex-wrap md:w-screen md:justify-between mt-16 gap-32 border-2 border-red-600">
-                        <div className="relative h-32 border-2 border-gray-700">
+            <div className="md:flex md:justify-between mt-16 gap-32">
+                {/* FRONTEND */}
+                    <motion.div
+                        className="md:w-1/3 mt-10"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, y: 50 },
+                            visible: { opacity: 1, y: 0 },
+                                    }}
+                    >
+                        <div className="relative h-32">
                             <div className="z-10">
-                                {/* <p className="font-subheading font-semibold text-5xl">01</p> */}
-                                <img className="w-[75px] h-[75px] mx-auto" alt='logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' />
-                                <p className="font-subheading font-semibold text-3xl text-pale-purple mt-3">JavaScript</p>
-                                <img className="w-[75px] h-[75px]" alt='express logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Express</p>
-                                <img className="w-[75px] h-[75px]" alt='sequelize logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Sequelize</p>
-                                <img className="w-[75px] h-[75px]" alt='python logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Python</p>
-                                <img className="w-[75px] h-[75px]" alt='flask logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Flask</p>
-                                <img className="w-[75px] h-[75px]" alt='sqlalchemy logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">SQLAlchemy</p>
-                                <img className="w-[75px] h-[75px]" alt='react logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">React</p>
-                                <img className="w-[75px] h-[75px]" alt='redux logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Redux</p>
-                                <img className="w-[75px] h-[75px]" alt='html logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">HTML</p>
-                                <img className="w-[75px] h-[75px]" alt='css logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">CSS</p>
-                                <img className="w-[75px] h-[75px]" alt='css logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">TailwindCSS</p>
-                                <p className="font-subheading font-semibold text-3xl mt-3">FramerMotion</p>
-                                <p className="font-subheading font-semibold text-3xl mt-3">SQL</p>
-                                <img className="w-[75px] h-[75px]" alt='postgresql logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">PostgreSQL</p>
-                                <img className="w-[75px] h-[75px]" alt='sqlite logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">SQLite</p>
-                                <img className="w-[75px] h-[75px]" alt='git logo' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg' />
-                                <p className="font-subheading font-semibold text-3xl mt-3">Git</p>
-                            </div>
+                            <p className="font-playfair font-semibold text-5xl">01</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                                Frontend
+                                         </p>
                         </div>
-                    </div>
-                </motion.div>
+                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+                        </div>
+                        <p className="mt-5">
+                        A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
+                        morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
+                        odio sit sagittis,
+                        </p>
+                     </motion.div>
+
+        {/* BACKEND */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                Backend
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
+            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
+            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
+            faucibus a
+          </p>
+        </motion.div>
+        {/* DESIGN */}
+        <motion.div
+          className="md:w-1/3 mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <div className="relative h-32">
+            <div className="z-10">
+              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                Design
+              </p>
+            </div>
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+          </div>
+          <p className="mt-5">
+            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
+            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
+            Sagittis, amet netus fringilla netus lobortis odio sed platea.
+            Bibendum.
+          </p>
+        </motion.div>
+            </div>
         </section>
     )
 }
