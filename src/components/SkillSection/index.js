@@ -46,18 +46,21 @@ function SkillSection(){
                     >
                         <div className="relative h-32">
                             <div className="z-10">
-                            <p className="font-playfair font-semibold text-5xl">01</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+                            <p className="font-subheading font-semibold text-3xl mt-3 uppercase text-pale-purple">
                                 Frontend
                                          </p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 bg-tiffany-blue absolute right-0 top-0 z-[-1]" />
                         </div>
-                        <p className="mt-5">
-                        A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-                        morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-                        odio sit sagittis,
-                        </p>
+                        <ul>
+                            <li className="font-content">HTML</li>
+                            <li className="font-content">CSS</li>
+                            <li className="font-content">JavaScript</li>
+                            <li className="font-content">React</li>
+                            <li className="font-content">Redux</li>
+                            <li className="font-content">TailwindCSS</li>
+                            <li className="font-content">FramerMotion</li>
+                        </ul>
                      </motion.div>
 
         {/* BACKEND */}
@@ -74,19 +77,22 @@ function SkillSection(){
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
                 Backend
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-pale-purple absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
-          </p>
+          <ul>
+            <li>JavaScript</li>
+            <li>Express</li>
+            <li>SQL</li>
+            <li>Sequelize</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQLAlchemy</li>
+            <li>Alembic</li>
+          </ul>
         </motion.div>
         {/* DESIGN */}
         <motion.div
@@ -102,19 +108,16 @@ function SkillSection(){
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
-                Design
+                Tools
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-firengine-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
-          </p>
+          <ul>
+            <li>Figma</li>
+            <li>Git Version Control</li>
+          </ul>
         </motion.div>
             </div>
         </section>
