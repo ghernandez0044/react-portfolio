@@ -84,14 +84,14 @@ function SkillSection(){
             <div className="w-1/2 md:w-3/4 h-32 bg-pale-purple absolute right-0 top-0 z-[-1]" />
           </div>
           <ul>
-            <li>JavaScript</li>
-            <li>Express</li>
-            <li>SQL</li>
-            <li>Sequelize</li>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>SQLAlchemy</li>
-            <li>Alembic</li>
+            <li className="font-content">JavaScript</li>
+            <li className="font-content">Express</li>
+            <li className="font-content">SQL</li>
+            <li className="font-content">Sequelize</li>
+            <li className="font-content">Python</li>
+            <li className="font-content">Flask</li>
+            <li className="font-content">SQLAlchemy</li>
+            <li className="font-content">Alembic</li>
           </ul>
         </motion.div>
         {/* DESIGN */}
