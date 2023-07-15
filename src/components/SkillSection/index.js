@@ -115,8 +115,8 @@ function SkillSection(){
             <div className="w-1/2 md:w-3/4 h-32 bg-firengine-red absolute right-0 top-0 z-[-1]" />
           </div>
           <ul>
-            <li>Figma</li>
-            <li>Git Version Control</li>
+            <li className="font-content">Figma</li>
+            <li className="font-content">Git Version Control</li>
           </ul>
         </motion.div>
             </div>
