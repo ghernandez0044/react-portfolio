@@ -77,7 +77,7 @@ function SkillSection(){
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase text-firengine-red">
                 Backend
               </p>
             </div>
@@ -108,7 +108,7 @@ function SkillSection(){
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-3xl mt-3 uppercase">
+              <p className="font-playfair font-semibold text-3xl mt-3 uppercase text-tiffany-blue">
                 Tools
               </p>
             </div>
