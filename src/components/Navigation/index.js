@@ -12,16 +12,16 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 function Navigation({ isTopOfPage, selectedPage, setSelectedPage }){
     // Create state variables
     const [ isMenuToggled, setIsMenuToggled ] = useState(false)
-    const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
-    const navbarBackground = isTopOfPage ? '' : 'bg-firengine-red'
+    const isDesktop = useMediaQuery("(min-width: 768px)")
+    const navbarBackground = isTopOfPage ? '' : 'bg-pale-purple'
 
     return (
         <nav className={`z-40 w-full fixed top-0 py-6 ${navbarBackground}`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-                <h4 className="font-subheading text-3xl font-bold">GH</h4>
+                <h4 className="font-subheading text-3xl font-bold hover:text-tiffany-blue cursor-pointer">GH</h4>
 
             {/* DESKTOP NAVIGATION */}
-            {isAboveSmallScreens ? (
+            {isDesktop ? (
                 <div className="flex justify-between gap-16 font-subheading text-sm font-semibold">
                     <Link page='Home' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                     <Link page='Skills' selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -36,7 +36,7 @@ function Navigation({ isTopOfPage, selectedPage, setSelectedPage }){
             )}
 
             {/* MOBILE MENU POPUP */}
-            {!isAboveSmallScreens && isMenuToggled && (
+            {!isDesktop && isMenuToggled && (
                 <div className="fixed right-0 bottom-0 h-full bg-rich-black w-[300px]">
                     {/* CLOSE ICON */}
                     <div className="flex justify-end p-12">
