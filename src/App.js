@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import useMediaQuery from './hooks/useMediaQuery'
 import Navigation from "./components/Navigation";
 import DotGroup from "./components/DotGroup";
@@ -31,7 +32,13 @@ function App() {
         {isDesktop && (
           <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
-        <LandingPage setSelectedPage={setSelectedPage} />
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <LandingPage setSelectedPage={setSelectedPage} />
+        </motion.div>
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
