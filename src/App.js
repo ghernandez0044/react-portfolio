@@ -10,11 +10,14 @@ function App() {
   // Create state variables
   const [ selectedPage, setSelectedPage ] = useState('home')
   const [ isTopOfPage, setIsTopOfPage ] = useState(true)
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
+  const isDesktop = useMediaQuery("(min-width: 1060px)")
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY === 0) setIsTopOfPage(true)
+      if(window.scrollY === 0){
+        setIsTopOfPage(true)
+        setSelectedPage('home')
+      }
       if(window.scrollY !== 0) setIsTopOfPage(false)
     }
     window.addEventListener('scroll', handleScroll)
@@ -25,7 +28,7 @@ function App() {
     <div className="app bg-space-blue">
       <Navigation isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
+        {isDesktop && (
           <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <LandingPage setSelectedPage={setSelectedPage} />
