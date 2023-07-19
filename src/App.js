@@ -6,6 +6,7 @@ import DotGroup from "./components/DotGroup";
 import LandingPage from "./components/LandingPage";
 import LineGradient from "./components/LineGradient";
 import SkillSection from "./components/SkillSection";
+import Projects from "./components/Projects";
 
 function App() {
   // Create state variables
@@ -48,6 +49,16 @@ function App() {
           onViewportEnter={() => setSelectedPage("skills")}
         >
           <SkillSection />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+          <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <Projects />
         </motion.div>
       </div>
     </div>
