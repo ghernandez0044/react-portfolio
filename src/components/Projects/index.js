@@ -4,7 +4,9 @@ import { motion } from "framer-motion"
 function Projects(){
 
     return (
-        null
+        <section id='projects' className="pt-48 pb-48">
+            {/* HEADINGS */}
+        </section>
     )
 }
 
