@@ -42,7 +42,7 @@ function Projects(){
                     <div className="flex justify-center text-center items-center p-10 bg-firengine-red max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
                         Beautiful User Interfaces
                     </div>
-                    <Project title='infinityx' />
+                    <Project title='infinityx' projectVariant={projectVariant} />
                 </motion.div>
             </div>
         </section>
