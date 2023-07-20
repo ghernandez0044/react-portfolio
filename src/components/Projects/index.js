@@ -17,9 +17,11 @@ function Projects(){
                     </div>
                 </div>
                 <p className="mt-10 mb-10">
-                    A list of programming languages and frameworks I have experience building projects with
+                    A list of projects showcasing my proficiency in using my listed skills and technologies
                 </p>
             </motion.div>
+
+            {/* PROJECTS */}
         </section>
     )
 }
