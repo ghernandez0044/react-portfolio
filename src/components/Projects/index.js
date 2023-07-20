@@ -9,12 +9,14 @@ function Projects(){
             <motion.div className="md:w-2/5 mx-auto text-center" initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.9 }} variants={{ hidden: { opacity: 0, y: -50 },
                        visible: { opacity: 1, y: 0 } }}>
                 <div>
-                    <p className="font-subheading font-semibold text-4xl mb:-5">
-                        My <span className="text-pale-purple">Skills</span>
+                    <p className="font-subheading font-semibold text-4xl uppercase">
+                        My <span className="text-pale-purple">Pro</span>jects
                     </p>
+                    <div className="flex justify-center mt-5">
+                        <LineGradient width="w-1/3" />
+                    </div>
                 </div>
-                <LineGradient width="w-1/3" />
-                <p className="mt-10 mb-7">
+                <p className="mt-10 mb-10">
                     A list of programming languages and frameworks I have experience building projects with
                 </p>
             </motion.div>
