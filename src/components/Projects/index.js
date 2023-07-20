@@ -1,5 +1,6 @@
 import LineGradient from "../LineGradient"
 import { motion } from "framer-motion"
+import Project from "../Project"
 
 function Projects(){
 
@@ -41,6 +42,7 @@ function Projects(){
                     <div className="flex justify-center text-center items-center p-10 bg-firengine-red max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
                         Beautiful User Interfaces
                     </div>
+                    <Project title='infinityx' />
                 </motion.div>
             </div>
         </section>
