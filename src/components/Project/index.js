@@ -1,4 +1,6 @@
-function Project({ title, projectVariant }){
+import { motion } from "framer-motion"
+
+function Project({ title, projectVariant, source }){
 
     const projectTitle = title.split(" ").join("-").toLowerCase()
     const overlayStyles = 'absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-space-blue'
@@ -11,7 +13,7 @@ function Project({ title, projectVariant }){
                     lorem ipsum 
                 </p>
             </div>
-            <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
+            <img src={source ? source : `../assets/${projectTitle}.png`} alt={projectTitle} />
         </motion.div>
     )
 }

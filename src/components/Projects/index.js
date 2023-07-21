@@ -42,8 +42,8 @@ function Projects(){
                     <div className="flex justify-center text-center items-center p-10 bg-firengine-red max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
                         Beautiful User Interfaces
                     </div>
-                    <Project title='infinityx' projectVariant={projectVariant} />
-                    <Project title='spotsbnb' projectVariant={projectVariant} />
+                    <Project title='infinityx' projectVariant={projectVariant} source='https://github.com/ghernandez0044/infinityx-capstone/assets/100185260/06046d4a-5b71-43ea-bde5-c3b33a5917d7' />
+                    <Project title='spotsbnb' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/4092006f-452c-471c-9d72-15661f909592' />
 
                     {/* ROW 2 */}
                     <Project title='tinterest' projectVariant={projectVariant} />
@@ -54,7 +54,7 @@ function Projects(){
                     <Project title='tinterest' projectVariant={projectVariant} />
                     <Project title='tinterest' projectVariant={projectVariant} />
 
-                    <div className="flex justify-center text-center items-center p-10 bg-firengine-red max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
+                    <div className="flex justify-center text-center items-center p-10 bg-pale-purple max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
                         Smooth User Experience
                     </div>
 
