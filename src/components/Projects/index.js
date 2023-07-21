@@ -43,6 +43,21 @@ function Projects(){
                         Beautiful User Interfaces
                     </div>
                     <Project title='infinityx' projectVariant={projectVariant} />
+                    <Project title='spotsbnb' projectVariant={projectVariant} />
+
+                    {/* ROW 2 */}
+                    <Project title='tinterest' projectVariant={projectVariant} />
+                    <Project title='tinterest' projectVariant={projectVariant} />
+                    <Project title='tinterest' projectVariant={projectVariant} />
+
+                    {/* ROW 3 */}
+                    <Project title='tinterest' projectVariant={projectVariant} />
+                    <Project title='tinterest' projectVariant={projectVariant} />
+
+                    <div className="flex justify-center text-center items-center p-10 bg-firengine-red max-w-[400px] max-h-[400px] text-2xl font-subheading font-semibold">
+                        Smooth User Experience
+                    </div>
+
                 </motion.div>
             </div>
         </section>
