@@ -43,12 +43,12 @@ function Projects(){
                         Beautiful User Interfaces
                     </div>
                     <Project title='InfinityX' projectVariant={projectVariant} source='https://github.com/ghernandez0044/infinityx-capstone/assets/100185260/06046d4a-5b71-43ea-bde5-c3b33a5917d7' subtitle='It is developed using Python, SQL, SQLAlchemy, Flask, PostgreSQL, React, and Redux.' />
-                    <Project title='SpotsBnb' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/4092006f-452c-471c-9d72-15661f909592' />
+                    <Project title='SpotsBnb' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/4092006f-452c-471c-9d72-15661f909592' subtitle='The technology stack included JavaScript, SQL, Sequelize, Express, PostgreSQL, React, and Redux.' />
 
                     {/* ROW 2 */}
                     <Project title='Tinterest' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/5f9beb1a-2c81-4375-a8ad-fd4ac905f450' />
                     <Project title='InfinityX' projectVariant={projectVariant} source='https://github.com/ghernandez0044/infinityx-capstone/assets/100185260/06046d4a-5b71-43ea-bde5-c3b33a5917d7' subtitle='It is developed using Python, SQL, SQLAlchemy, Flask, PostgreSQL, React, and Redux.' />
-                    <Project title='SpotsBnb' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/4092006f-452c-471c-9d72-15661f909592' />
+                    <Project title='SpotsBnb' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/4092006f-452c-471c-9d72-15661f909592' subtitle='The technology stack included JavaScript, SQL, Sequelize, Express, PostgreSQL, React, and Redux.' />
 
                     {/* ROW 3 */}
                     <Project title='Tinterest' projectVariant={projectVariant} source='https://github.com/ghernandez0044/spotsbnb/assets/100185260/5f9beb1a-2c81-4375-a8ad-fd4ac905f450' />
