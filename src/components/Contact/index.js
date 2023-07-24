@@ -33,7 +33,30 @@ function Contact(){
                 </motion.div>
                 <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5, delay: 0.2 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
                     <form target="_blank" onSubmit={onSubmit} action="" method="POST">
-                        
+                        <input className="w-full bg-space-blue font-semibold placeholder-rich-black p-3" type="text" placeholder="NAME" {...register('name', {
+                            required: true,
+                            maxLength: 100
+                        })} />
+                        {errors.name && (
+                            <p className="mt-1 text-firengine-red">
+                                {errors.name.type === 'required' && 'This field is required'}
+                                {errors.name.type === 'maxLength' && 'Max length is 100 characters'}
+                            </p>
+                        )}
+
+
+                        <input className="w-full bg-space-blue font-semibold placeholder-rich-black p-3 mt-5" type="text" placeholder="EMAIL" {...register('email', {
+                            required: true,
+                            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+                        })} />
+                        {errors.email && (
+                            <p className="mt-1 text-firengine-red">
+                                {errors.email.type === 'required' && 'This field is required'}
+                                {errors.email.type === 'pattern' && 'Must be a valid email'}
+                            </p>
+                        )}
+
+
                     </form>
                 </motion.div>
             </div>
