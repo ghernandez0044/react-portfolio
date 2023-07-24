@@ -56,6 +56,17 @@ function Contact(){
                             </p>
                         )}
 
+                        <textarea className="w-full bg-space-blue font-semibold placeholder-rich-black p-3 mt-5" type="text" placeholder="MESSAGE" rows='4' cols='50' {...register('message', {
+                            required: true,
+                            maxLength: 2000
+                        })} />
+                        {errors.message && (
+                            <p className="mt-1 text-firengine-red">
+                                {errors.message.type === 'required' && 'This field is required'}
+                                {errors.message.type === 'maxLength' && 'Max length is 2000 characters'}
+                            </p>
+                        )}
+
 
                     </form>
                 </motion.div>
