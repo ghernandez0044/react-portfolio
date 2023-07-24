@@ -17,13 +17,12 @@ function Contact(){
             {/* HEADINGS */}
             <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}>
                 <div>
-                    <p className="uppercase font-subheading font-semibold text-4xl mb-5 text-firengine-red">
-                        Contact Me
+                    <p className="uppercase font-subheading font-semibold text-4xl">
+                        <span className="text-tiffany-blue">Contact Me</span>
                     </p>
-                    <LineGradient width="mx-auto w-2/4" />
-                    <p className="mt-10">
-                        Here is what people are saying
-                    </p>
+                    <div className="flex md:justify-end my-5">
+                        <LineGradient width="mx-auto w-2/4" />
+                    </div>
                 </div>
             </motion.div>
         </section>
