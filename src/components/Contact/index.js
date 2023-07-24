@@ -33,7 +33,7 @@ function Contact(){
                 </motion.div>
                 <motion.div initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5, delay: 0.2 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
                     <form target="_blank" onSubmit={onSubmit} action="" method="POST">
-                        <input className="w-full bg-space-blue font-semibold placeholder-rich-black p-3" type="text" placeholder="NAME" {...register('name', {
+                        <input className="w-full bg-tiffany-blue font-semibold placeholder-rich-black p-3 mt-3" type="text" placeholder="Name" {...register('name', {
                             required: true,
                             maxLength: 100
                         })} />
@@ -45,7 +45,7 @@ function Contact(){
                         )}
 
 
-                        <input className="w-full bg-space-blue font-semibold placeholder-rich-black p-3 mt-5" type="text" placeholder="EMAIL" {...register('email', {
+                        <input className="w-full bg-tiffany-blue font-semibold placeholder-rich-black p-3 mt-5" type="text" placeholder="Email" {...register('email', {
                             required: true,
                             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
                         })} />
@@ -56,7 +56,7 @@ function Contact(){
                             </p>
                         )}
 
-                        <textarea className="w-full bg-space-blue font-semibold placeholder-rich-black p-3 mt-5" type="text" placeholder="MESSAGE" rows='4' cols='50' {...register('message', {
+                        <textarea className="w-full bg-tiffany-blue font-semibold placeholder-rich-black p-3 mt-5 mb-5" type="text" placeholder="Message" rows='4' cols='50' {...register('message', {
                             required: true,
                             maxLength: 2000
                         })} />
@@ -66,6 +66,10 @@ function Contact(){
                                 {errors.message.type === 'maxLength' && 'Max length is 2000 characters'}
                             </p>
                         )}
+
+                        <button type="submit" className="p-5 bg-pale-purple font-semibold text-space-blue hover:bg-firengine-red hover:text-white">
+                            Send Me A Message
+                        </button>
 
 
                     </form>
